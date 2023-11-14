@@ -1059,7 +1059,7 @@ input.checkbox_input:checked +.checkbox_icon {
 }
 /* __________________________________________________________TABLET__________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
 
 /*_____Header_____*/
 
