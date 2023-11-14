@@ -375,7 +375,7 @@ footer
 
 .emailaddress_footer {
     background-color: rgba(33, 150, 243, 0);
-    width: 400px;
+    width: 100%;
     height: 50px;
     padding-left: 12px;
     color: var(--secondary-text-color);
