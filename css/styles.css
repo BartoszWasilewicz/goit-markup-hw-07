@@ -162,7 +162,8 @@ ol {
     padding: 0;  
 }
 
-a {
+a,
+.link {
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -757,8 +758,13 @@ input.checkbox_input:checked +.checkbox_icon {
 
 @media screen and (max-width: 767px) {
 
-    body {
-        overflow-x: hidden;
+    .hamburger {
+        stroke: var(--main-text-color);
+    }
+
+    .hamburger-div {
+    margin: auto;
+    max-width: 428px;
     }
 
     .modal {
@@ -767,12 +773,57 @@ input.checkbox_input:checked +.checkbox_icon {
 
 /*_____Header_____*/
 
+.header-content {
+    justify-content: space-between;
+}
+
 .nav-header {
     display: none;
 }
 
 .contact-links {
     display: none;
+}
+
+.mobile-menu {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*_____Hamburger_____*/
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.menu-container-a {
+    /* overflow: auto; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container-a.is-open {
+    transform: translateY(0);
 }
 
 /*_____Hero Image_____*/
@@ -1364,6 +1415,20 @@ h3 {
 /* __________________________________________________________DESKTOP__________________________________________________________ */
 
 @media screen and (min-width: 1158px) {
+
+    .menu-toggle {
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+    }
 
     .container {
         width: 100%
