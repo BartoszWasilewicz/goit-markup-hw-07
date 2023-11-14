@@ -141,7 +141,7 @@
         <h2 class="section_title">Nasz zespół</h2>
             <ul class="photos_crew">
                 <li class="crewmember"><img src="./images/imgD.jpg" alt="man in red shirt, beard and glasses on white background"
-                    width="270" height="260">
+                    width="270" height="260" srcset="./images/imgD.jpg 1x, ./images/imgD@2x 2x">
                 <h3 class="section_crewmember">John Doe</h3><p class="section_crewmember_desctription">Product Designer</p>
                 <ul class="crewmember_icons">
                     <li>
@@ -177,7 +177,7 @@
                     </li>
                 </ul>
                 <li class="crewmember"><img src="./images/imgC.jpg" alt="woman with blonde hair and glasses"
-                    width="270" height="260">
+                    width="270" height="260" srcset="./images/imgC.jpg 1x, ./images/imgC@2x 2x">
                 <h3 class="section_crewmember">Sarah Smith</h3><p class="section_crewmember_desctription">Frontend Developer</p>
                 <ul class="crewmember_icons">
                     <li>
@@ -213,7 +213,7 @@
                     </li>
                 </ul>
                 <li class="crewmember"><img src="./images/imgB.jpg" alt="man in blue shirt"
-                    width="270" height="260">
+                    width="270" height="260" srcset="./images/imgB.jpg 1x, ./images/imgB@2x 2x">
                 <h3 class="section_crewmember">David Martinez</h3><p class="section_crewmember_desctription">Marketing</p>
                 <ul class="crewmember_icons">
                     <li>
@@ -249,7 +249,7 @@
                     </li>
                 </ul>
                 <li class="crewmember"><img src="./images/imgA.jpg" alt="man with black t-shirt, beard and glasses on urban background"
-                    width="270" height="260">
+                    width="270" height="260" srcset="./images/imgA.jpg 1x, ./images/imgA@2x 2x">
                 <h3 class="section_crewmember">Kyle Benson</h3><p class="section_crewmember_desctription">UI Designer</p>
                 <ul class="crewmember_icons">
                     <li>
@@ -342,10 +342,9 @@
         </div>
     </section>
 </main>
-<footer>
-    <div class="container">
+<footer class="container">
+    <div class="footer_content">
         <div class="footer_flex">
-            <div class="footer">
     <a href="index.html" class="logo-footer"><span>Web</span><span class="logo-studio">Studio</span></a>
     <address>
         <ul>
@@ -353,8 +352,8 @@
             <li class="address-link"><a href="mailto:info@example.com" class="contact-footer">info@example.com</a></li>
             <li class="address-link"><a href="tel:+48111111111" class="contact-footer">+48 111 111 111</a></li>
         </ul>
-    </address>
     </div>
+    </address>
     <div class="social_footer_join">
         <h3 class="social_footer_header">Dołącz do nas</h3>
             <ul class="social_footer_icons">
@@ -402,7 +401,6 @@
                             <use href="./images/icons/icons.svg#icon-icon-send"></use>
                         </svg>
                     </button>
-                    </input>
                 </form>
             </div>
         </div>
@@ -426,10 +424,9 @@
 
             <input id="username" class="input_index" type="text"
              minlength="1" required>
-                <svg width18px" height="18px" class="label_index_svg">
+                <svg width="18px" height="18px" class="label_index_svg">
                     <use href="./images/icons/icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
-            </input>="
              </label>
 
              <label for="tel" class="label_index">
