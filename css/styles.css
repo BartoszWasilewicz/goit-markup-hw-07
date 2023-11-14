@@ -1771,6 +1771,9 @@ h3 {
 
 .footer_flex {
     width: 100%;
+    display: flex;
+    gap: 80px;
+    justify-content: space-around;
 }
 
 .social_footer_join {
