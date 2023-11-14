@@ -794,22 +794,12 @@ input.checkbox_input:checked +.checkbox_icon {
 
 /*_____Hamburger_____*/
 
-.menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    outline: none;
+.hamburger-menu-button {
+    stroke: tomato;
 }
 
 .menu-container-a {
-    /* overflow: auto; */
+    overflow: auto;
     position: fixed;
     top: 0;
     left: 0;
@@ -820,7 +810,7 @@ input.checkbox_input:checked +.checkbox_icon {
     z-index: 999;
     transform: translateY(100%);
     transition: transform 250ms ease-in-out;
-}
+  }
 
 .menu-container-a.is-open {
     transform: translateY(0);
